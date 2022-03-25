@@ -7,6 +7,18 @@
     tools:context=".screens.currencyExchange.CurrencyExchangeFragment">
 
 
+    <ImageView
+        android:layout_width="211dp"
+        android:layout_height="155dp"
+        android:src="@drawable/ic_baseline_currency_ruble_24"
+        android:foregroundGravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/currencyNominalExchange"
+        />
+
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -25,7 +37,7 @@
         android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="100"
-        android:textColor="@color/black"
+        android:textColor="@color/blue"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +51,7 @@
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
         android:text="0"
-        android:textColor="@color/black"
+        android:textColor="@color/blue"
         android:textSize="24dp"
         app:layout_constraintEnd_toStartOf="@+id/currency"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +63,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="RUB"
-        android:textColor="@color/black"
+        android:textColor="@color/blue"
         android:textSize="24dp"
         android:layout_marginStart="4dp"
         app:layout_constraintBottom_toBottomOf="@+id/currencyValueExchange"
@@ -65,7 +77,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="0"
-        android:textColor="@color/black"
+        android:textColor="@color/blue"
         android:textSize="24dp"
         app:layout_constraintTop_toBottomOf="@id/currencyValueExchange"
         app:layout_constraintStart_toStartOf="parent"

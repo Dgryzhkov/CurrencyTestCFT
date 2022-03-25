@@ -19,7 +19,7 @@ class CurrencyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         currencyName.text = currency.name
         currencyNominal.text = currency.nominal.toString()
         currencyCharCode.text = currency.charCode
-        currencyValue.text =  "${ currency.value } RUB"
+        currencyValue.text =  "${ currency.value }"
 
                 itemView.setOnClickListener {
                     oneClickListener.onItemClick(currency)
