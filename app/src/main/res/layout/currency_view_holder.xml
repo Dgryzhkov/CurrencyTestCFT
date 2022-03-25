@@ -70,7 +70,7 @@
         android:layout_margin="4dp"
         app:layout_constraintEnd_toEndOf="parent"
 
-        />
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
