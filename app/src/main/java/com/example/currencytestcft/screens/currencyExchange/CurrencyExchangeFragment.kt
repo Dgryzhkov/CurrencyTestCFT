@@ -39,12 +39,12 @@ class CurrencyExchangeFragment : Fragment() {
 
         currencyValueInRub.doOnTextChanged { text,_,_,_ ->
             if (!text.isNullOrEmpty()) {
-                currencyValue.text = "${(text.toString().toFloat() / currency.value)} ${currency.charCode} "
+                currencyValue.text = "${(text.toString().toFloat() / currency.value*currency.nominal)} ${currency.charCode} "
             }
         }
 
-        currencyNominal.text = "1${currency.charCode} = ${currency.value} RUB"
-        currencyValue.text = "  ${(valueIRub / currency.value)} ${currency.charCode}"
+        currencyNominal.text = "${currency.nominal} ${currency.charCode} = ${currency.value} RUB"
+        currencyValue.text = "${valueIRub} ${currency.charCode}"
     }
 
     companion object {
